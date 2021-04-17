@@ -20,6 +20,8 @@ import Home from './src/screens/Home';
 import ScreenA from './src/screens/ScreenA';
 import ScreenB from './src/screens/ScreenB';
 import ScreenC from './src/screens/ScreenC';
+import ScreenD from './src/screens/ScreenD';
+import ScreenE from './src/screens/ScreenE';
 
 const Stack = createStackNavigator();
 
@@ -113,6 +115,18 @@ const AppStack = () => {
       <Stack.Screen name="ScreenC" component={ScreenC}
         options={{
           ...customTransition,
+        }}
+      />
+      <Stack.Screen name="ScreenD" component={ScreenD}
+        options={{
+          gestureDirection: 'vertical',
+          cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
+        }}
+      />
+       <Stack.Screen name="ScreenE" component={ScreenE}
+        options={{
+          gestureDirection: 'vertical-inverted',
+          cardStyleInterpolator: CardStyleInterpolators.forRevealFromBottomAndroid,
         }}
       />
     </Stack.Navigator>

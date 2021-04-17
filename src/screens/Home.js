@@ -15,6 +15,12 @@ const Home = ({navigation}) => {
             <TouchableOpacity style={_styles.button} onPress={() => navigation.navigate('ScreenC')}>
                 <Text style={styles.text}>ScreenC</Text>
             </TouchableOpacity>
+            <TouchableOpacity style={_styles.button} onPress={() => navigation.navigate('ScreenD')}>
+                <Text style={styles.text}>ScreenD</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={_styles.button} onPress={() => navigation.navigate('ScreenE')}>
+                <Text style={styles.text}>ScreenE</Text>
+            </TouchableOpacity>
         </ViewContainer>
     )
 }
