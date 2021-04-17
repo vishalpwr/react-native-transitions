@@ -17,9 +17,9 @@ import {
   View,
 } from 'react-native';
 import Home from './src/screens/Home';
-import Screen1 from './src/screens/Screen1';
-import Screen2 from './src/screens/Screen2';
-import Screen3 from './src/screens/Screen3';
+import ScreenA from './src/screens/ScreenA';
+import ScreenB from './src/screens/ScreenB';
+import ScreenC from './src/screens/ScreenC';
 
 const Stack = createStackNavigator();
 
@@ -75,6 +75,7 @@ const customTransition = {
           }
         ]
       },
+      opacity: current.opacity,
     }
   }
 }
@@ -90,7 +91,7 @@ const AppStack = () => {
     // headerMode="none"
     >
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Screen1" component={Screen1}
+      <Stack.Screen name="ScreenA" component={ScreenA}
         options={{
           gestureDirection: 'vertical',
           transitionSpec: {
@@ -100,7 +101,7 @@ const AppStack = () => {
           cardStyleInterpolator: CardStyleInterpolators.forModalPresentationIOS,
         }}
       />
-      <Stack.Screen name="Screen2" component={Screen2}
+      <Stack.Screen name="ScreenB" component={ScreenB}
         options={{
           transitionSpec: {
             open: config,
@@ -109,7 +110,7 @@ const AppStack = () => {
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
         }}
       />
-      <Stack.Screen name="Screen3" component={Screen3}
+      <Stack.Screen name="ScreenC" component={ScreenC}
         options={{
           ...customTransition,
         }}

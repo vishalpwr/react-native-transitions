@@ -3,12 +3,12 @@ import { View, Text } from 'react-native'
 import ViewContainer, { styles } from "../components/ViewContainer";
 import Colors from '../constants/Colors';
 
-const Screen1 = () => {
+const ScreenA = () => {
     return (
         <ViewContainer backgroundColor={Colors.powderBlue}>
-            <Text style={styles.text}>Screen1</Text>
+            <Text style={styles.text}>ScreenA</Text>
         </ViewContainer>
     )
 }
 
-export default Screen1
+export default ScreenA
