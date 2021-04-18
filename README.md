@@ -1,6 +1,6 @@
-#react-native-transitions with stack-navigation
+## react-native-transitions with stack-navigation
 
-##Getting started
+### Getting started
 Start by cloning repository and installing dependencies using npm/yarn
 ```
 git clone
