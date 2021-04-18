@@ -17,3 +17,6 @@ install on android/ios:
 ```
 react-native run-android
 react-native run-ios
+```
+## Screens-transitions
+![rn_transition.gif](/rn_transition.gif)
